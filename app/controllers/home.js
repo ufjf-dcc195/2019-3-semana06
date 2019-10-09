@@ -1,7 +1,8 @@
 module.exports = {
     pedeNome,
     saudacao,
-    hello
+    hello,
+    index
 }
 
 function pedeNome(req, res, next) {
@@ -17,4 +18,10 @@ function saudacao(req, res) {
 }
 function hello(req, res) {
     res.send({mensagem:"Hello world!"});
+}
+
+function index(req, res, next) {
+    res.render("index", {
+        titulo:"Bem vindo!"
+    })
 }
