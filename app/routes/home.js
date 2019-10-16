@@ -3,4 +3,5 @@ module.exports = function (app) {
     //app.use("/", controllers.pedeNome);
     //app.use("/", controllers.saudacao);
     app.use("/index.html", controllers.index);
+    app.use("/newuser.json", controllers.createUser);
 }
